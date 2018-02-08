@@ -1,0 +1,140 @@
+#:kivy 1.10.0
+
+<Ui>:
+    # ids for buttons 
+    one: One
+    two: Two
+    three: Three
+    four: Four
+    five: Five
+    six: Six
+    seven: Seven
+    eight: Eight
+    nine: Nine
+    zero: Zero
+    add: Add
+    sub: Sub
+    mul: Mul
+    div: Div
+    modulus: Modulus
+    is_equal: Equal
+    dels: Del
+    dot: Dot
+    
+    # id for display
+    inputs: Input
+    
+    BoxLayout:
+        size_hint: None,None
+        height: 100
+        width: 300
+    
+        Label:
+            id: Input
+            text: '0'     # the main display
+            font_size: '30sp'  # font size
+    GridLayout:
+        cols: 3
+    
+    
+    
+        Button:
+            id: One
+            text: '1'
+            on_press: root.one_pressed(1)  # call this function when pressed
+
+        Button:
+            id: Two
+            text: '2'
+            on_press: root.two_pressed()
+        
+        Button:
+            id: Three
+            text: '3'
+            on_press: root.three_pressed()
+        
+        Button:
+            id: Four
+            text: '4'
+            on_press: root.four_pressed()
+        
+        Button:
+            id: Five
+            text: '5'
+            on_press: root.five_pressed()
+        
+        Button:
+            id: Six
+            text: '6'
+            on_press: root.six_pressed()
+        
+        Button:
+            id: Seven
+            text: '7'
+            on_press: root.seven_pressed()
+        
+        Button:
+            id: Eight
+            text: '8'
+            on_press: root.eight_pressed()
+        
+        Button:
+            id: Nine
+            text: '9'
+            on_press: root.nine_pressed()
+        
+        Button:
+            id: Zero
+            text: '0'
+            on_press: root.zero_pressed()
+        
+        Button: 
+            id: Add
+            text: '+'
+            on_press: root.add_pressed()
+    
+        Button:
+            id: Sub
+            text: '-'
+            on_press: root.sub_pressed()
+         
+        Button:
+            id: Mul
+            text: '*'
+            on_press: root.mul_pressed()
+        
+        Button:
+            id: Div
+            text: '/'
+            on_press: root.div_pressed()
+        
+        Button:
+            id: Modulus
+            text: '%'
+            on_press: root.modulus_pressed()
+        
+        Button: 
+            id: Equal
+            text: '='
+            on_press: root.is_equal_pressed()
+        
+        Button:
+            id: Del
+            text: 'Delete'
+            on_press: root.del_pressed()
+        
+        Button:
+            id: Dot
+            text: '.'
+            on_press: root.dot_pressed()
+         
+     
+
+        
+
+
+
+
+
+
+
