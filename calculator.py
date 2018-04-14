@@ -264,6 +264,9 @@ class Ui(BoxLayout):
             self.inputs.text = '0'
             self.l_intakes = ''
             self.r_intakes = ''
+            self.displays = ''
+            self.first_pressed = False
+            self.is_opt_pressed = False
         
     def is_equal_pressed(self):
         if self.r_intakes:  # if there is no input and equal is presed then do nothing
